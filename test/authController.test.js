@@ -3,9 +3,9 @@ const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-jest.mock('../models/user'); // Mock the User model
-jest.mock('bcrypt'); // Mock bcrypt
-jest.mock('jsonwebtoken'); // Mock jsonwebtoken
+jest.mock('../models/user');
+jest.mock('bcrypt');
+jest.mock('jsonwebtoken');
 
 describe("Auth Controller", () => {
     let req, res;
